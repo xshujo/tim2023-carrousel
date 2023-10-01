@@ -1,0 +1,167 @@
+.carrousel {
+  background-color: white;
+  position: fixed;
+  width: 90vw;
+  height: 60vh;
+  top: 20%;
+  left: 5%;
+  transform: scale(0);
+  transition: transform 0.3s;
+  z-index: 2;
+}
+@media screen and (min-width: 576px) {
+  .carrousel {
+    width: 70vw;
+    height: 60vh;
+    left: 15%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carrousel {
+    width: 50vw;
+    height: 60vh;
+    left: 25%;
+  }
+}
+.carrousel .carrousel__x {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(74, 74, 74, 0.4196078431);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carrousel .carrousel__x:hover {
+  background-color: rgba(255, 0, 0, 0.4196078431);
+  transition: background 0.3s;
+}
+.carrousel .carrousel__image_sui {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(74, 74, 74, 0.4196078431);
+  color: white;
+  font-family: "Poppins";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 4;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carrousel .carrousel__image_sui:hover {
+  background-color: rgba(74, 74, 74, 0.8352941176);
+  transition: background 0.3s;
+}
+.carrousel .carrousel__image_pre {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(74, 74, 74, 0.4196078431);
+  color: white;
+  font-family: "Poppins";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 4;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carrousel .carrousel__image_pre:hover {
+  background-color: rgba(74, 74, 74, 0.8352941176);
+  transition: background 0.3s;
+}
+.carrousel .carrousel__figure:first-of-type {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.carrousel .carrousel__figure:first-of-type .carrousel__img {
+  display: block;
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+.carrousel .carrousel__figure:first-of-type .carrousel__img--activer {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.carrousel .carrousel__figure:last-of-type {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.carrousel .carrousel__figure:last-of-type .carrousel__img {
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+  filter: blur(10px) brightness(0.9);
+}
+.carrousel .carrousel__figure:last-of-type .carrousel__fond--activer {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.carrousel .carrousel__form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+.carrousel .carrousel__form .carrousel__rad {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 7px solid #4a4a4a;
+  outline: 1px solid #4a4a4a;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.carrousel .carrousel__form .carrousel__rad:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+.carrousel .carrousel__form .carrousel__rad:checked {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 7px solid #ffffff;
+  outline: 1px solid #ffffff;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.carrousel .carrousel__form .carrousel__rad:checked:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.carrousel--activer {
+  transform: scale(1);
+  transition: transform 0.3s;
+}/*# sourceMappingURL=style.css.map */
