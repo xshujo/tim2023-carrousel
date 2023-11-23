@@ -1,1 +1,79 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainProf {
+  width: 100%;
+  text-align: center;
+}
+.mainProf .carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.mainProf .carousel button {
+  height: fit-content;
+  background: white;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 4;
+  cursor: pointer;
+}
+.mainProf .carousel .zoneProfs {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.radiobouton {
+  margin: 10px;
+}
+.radiobouton input[type=radio] {
+  width: 50px;
+  height: 5px;
+  margin: 0 10px;
+  border-radius: 50px;
+  appearance: none;
+  background-color: aqua;
+  z-index: 4;
+  cursor: pointer;
+}
+.radiobouton input[type=radio]:hover {
+  background: white;
+}
+
+.prof__figure {
+  flex-shrink: 0;
+  flex-basis: 33%;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .prof__figure {
+    flex-basis: 14%;
+  }
+}
+.prof__figure img {
+  display: block;
+  width: 85px;
+  object-fit: cover;
+  height: 90px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.prof__figure img:hover {
+  background-color: #33488e;
+}
+
+@media only screen and (min-width: 976px) {
+  .titreProf {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
