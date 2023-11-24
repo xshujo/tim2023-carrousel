@@ -9,6 +9,7 @@
 .mainProf {
   width: 100%;
   text-align: center;
+  z-index: 3;
   .carousel {
     width: 100%;
     display: flex;
@@ -25,7 +26,6 @@
       align-items: center;
       cursor: pointer;
       z-index: 4;
-      cursor: pointer;
     }
     .zoneProfs {
       display: flex;
