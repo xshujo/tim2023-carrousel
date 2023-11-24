@@ -9,6 +9,7 @@
 .mainProf {
   width: 100%;
   text-align: center;
+  position: relative;
   z-index: 3;
   .carousel {
     width: 100%;
@@ -17,7 +18,7 @@
 
     button {
       height: fit-content;
-      background: white;
+      background: none;
       padding: 8px;
       border: none;
       border-radius: 15px;
@@ -26,6 +27,9 @@
       align-items: center;
       cursor: pointer;
       z-index: 4;
+      svg {
+        fill: white;
+      }
     }
     .zoneProfs {
       display: flex;
@@ -45,6 +49,8 @@
     background-color: aqua;
     z-index: 4;
     cursor: pointer;
+    position: relative;
+    z-index: 3;
   }
   input[type="radio"]:hover {
     background: white;
@@ -71,6 +77,9 @@
   img:hover {
     background-color: #33488e;
   }
+}
+.description {
+  z-index: 3;
 }
 
 ////////////////////////////////////////////////////////
