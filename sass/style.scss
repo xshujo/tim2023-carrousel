@@ -6,11 +6,15 @@
 ////////////////////////////////////////////////////////
 ///               VERSION MOBILE                    ///
 /// ///////////////////////////////////////////////////
+.mainProf,
+.description,
+.radiobouton {
+  position: relative;
+  z-index: 3;
+}
 .mainProf {
   width: 100%;
   text-align: center;
-  position: relative;
-  z-index: 3;
   .carousel {
     width: 100%;
     display: flex;
@@ -47,10 +51,7 @@
     border-radius: 50px;
     appearance: none;
     background-color: aqua;
-    z-index: 4;
     cursor: pointer;
-    position: relative;
-    z-index: 3;
   }
   input[type="radio"]:hover {
     background: white;
@@ -79,7 +80,10 @@
   }
 }
 .description {
-  z-index: 3;
+  background-color: rebeccapurple;
+  width: 90%;
+  height: 50%;
+  border-radius: 20px;
 }
 
 ////////////////////////////////////////////////////////

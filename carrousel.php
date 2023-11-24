@@ -59,6 +59,7 @@ function affichage_galerie()
                     </svg></button>
             </div>
         </div>
+        <form class="radiobouton"></form>
         <!-- Zone textes des professeurs -->
         <div class="description">
             <?php
@@ -79,7 +80,7 @@ function affichage_galerie()
             wp_reset_postdata();
             ?>
         </div>
-        <form class="radiobouton"></form>
+
 <?php
     endif;
     wp_reset_postdata();
